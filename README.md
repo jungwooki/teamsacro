@@ -14,6 +14,10 @@ npm test
 로컬 주소: http://127.0.0.1:5513
 `index.html`을 직접 열거나 정적 서버로 제공할 수도 있습니다.
 
+## Vercel 배포
+
+`npm run build`가 브라우저용 파일 13개만 `dist/`에 복사합니다. `vercel.json`에서 프레임워크를 Other(`null`)로 지정하고 이 폴더를 배포합니다. `server.js`는 로컬 미리보기 전용입니다. 연결된 GitHub main 브랜치에 push하면 Vercel이 재배포합니다.
+
 ## 자료 구성
 
 - 선수: 아크로FC 21명 — 2014년생 3명, 2015년생 12명, 2016년생 6명.
