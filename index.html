@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="아크로FC 선수 리포트와 바이오밴딩 IDP 샘플 보드">
+  <title>MPS PRO | 아크로FC 샘플 보드</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner">
+    <div class="brand"><img id="brand-logo" src="logo-white.png" alt="MPS"><strong>PRO</strong><span>아크로FC · 샘플 보드</span></div>
+    <div class="header-actions"><label class="year-select">선수단 <select id="birth-year" aria-label="출생연도별 선수단"><option value="2014">2014년생 · U12</option><option value="2015">2015년생 · U11</option><option value="2016">2016년생 · U10</option><option value="bio">바이오밴딩 · 전체 선수</option></select></label><span id="report-date" class="report-date"></span><button id="theme-toggle" type="button" aria-label="화면 모드 변경">◐ <span>다크</span></button></div>
+  </div></header>
+  <main id="dashboard" class="container"></main>
+  <noscript>이 샘플 보드를 사용하려면 JavaScript를 활성화해 주세요.</noscript>
+  <footer class="legal-footer"><div>
+    <p>(주)주니어골든에이지는 의료기관이 아니며, 소프트웨어 개발 및 정보제공업을 영위하는 IT 기업입니다.</p>
+    <p>MPS는 제휴 의료기관에서 측정한 검사 수치를 연동 받아 통계 및 시각화 정보를 제공하는 구독형 SaaS 플랫폼입니다.</p>
+    <p>본 플랫폼에서 제공하는 분석 결과는 참고용 기초 데이터이며, 의학적 진단, 처방 및 치료를 대신하지 않습니다.</p>
+  </div></footer>
+  <dialog id="player-dialog" aria-label="멘탈 지표 상세"><div id="player-detail"></div></dialog>
+  <script src="data.js"></script><script src="live-summary.js"></script><script src="benchmarks.js"></script><script src="dashboard.js"></script><script src="map-layout.js"></script><script src="dashboard-v2.js"></script><script src="player-report.js"></script>
+  <script src="team-config.js"></script>
+</body>
+</html>

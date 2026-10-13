@@ -1,0 +1,8 @@
+{
+  "name": "teamsacro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "아크로FC 선수 리포트 및 바이오밴딩 IDP 샘플 보드",
+  "scripts": {"start": "node server.js", "test": "node verify.cjs"},
+  "engines": {"node": ">=18"}
+}
