@@ -127,7 +127,7 @@ playerPage = function (code) {
   if (!p) return '<p>선수를 찾을 수 없습니다.</p>';
   const heading = `<header class="player-report-head"><button type="button" class="back" data-back>← 선수단으로 돌아가기</button><div><span class="eyebrow">PLAYER REPORT · ${esc(p.code)}</span><h1>${esc(p.name)}</h1><p>${esc(p.birth.slice(0, 4))}년생 · 측정 ${esc(p.tested)}</p><div class="player-tags"><span>${stageLabel(p)}</span><span>${esc(p.phv)}</span><span>골연령 ${boneText(p)}</span><span class="maturity-delta">역연령 대비 ${signed(Math.round(maturityDifference(p)), 0)}개월</span></div></div></header>${playerMenu()}`;
   if (state.playerView === 'idp') {
-    return heading + playerQuickNotes(p) + `<section class="idp-intro"><span class="eyebrow">MPS BIO-BANDING</span><h2>바이오밴딩 IDP</h2><p>검사 결과와 현장 관찰을 연결해 이 선수의 성장 목표를 정합니다.</p></section>` + idpPanel(p) + fieldPanel(p);
+    return heading + playerQuickNotes(p) + `<section class="idp-intro"><span class="eyebrow">MPS BIO-BANDING</span><div class="bio-heading"><h2>바이오밴딩 IDP</h2>${bioVideoLink()}</div><p>검사 결과와 현장 관찰을 연결해 이 선수의 성장 목표를 정합니다.</p></section>` + idpPanel(p) + fieldPanel(p);
   }
   return heading + playerQuickNotes(p) + `<div id="mps-report" class="mps-report">${reportProfile(p)}${reportPhysical(p)}${reportMental(p)}${reportObservation(p)}${reportDoctor(p)}</div>`;
 };
